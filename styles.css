@@ -11,6 +11,74 @@ a{
     text-decoration: none;
 }
 
+nav{
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+nav .left a {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a{
+    margin: 0 10px;
+}
+
+nav .right a:last-child{
+    color:white;
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  /*margin-bottom: 100px;*/
+  gap: 40px;
+}
+
+.home-section .text h2 {
+  font-size: 45px;
+}
+
+.home-section .text{
+    flex: 5
+}
+
+.home-section .photo{
+
+    flex: 2
+}
+
+.home-section .text .links a{
+    display: inline-block;
+    padding:5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width:600px){
+    nav{
+        padding: 0 20px
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a:last-child{
+        color: black;
+        background-color: transparent;
+    }
+}
 
 }
