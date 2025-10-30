@@ -1,22 +1,31 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family:Nunito Sans;
-    background-color: #cbced3;
-
-a{
-    color:black;
-    text-decoration: none;
+body {
+  font-family:Nunito Sans;
+  background-color: #cbced3;
 }
 
-nav{
-    height: 80px;
-    padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+p {
+  max-width: 75ch;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+/*-----------------------------------*\
+            NAVIGATION
+\*------------------------------------*/
+
+nav {
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav .left a {
@@ -24,47 +33,165 @@ nav .left a {
   font-weight: 600;
 }
 
-nav .right a{
+nav .right a {
     margin: 0 10px;
 }
 
-nav .right a:last-child{
-    color:white;
-    background-color: black;
-    padding: 2px 5px;
-    border-radius: 5px;
-}
+
+
+
+
+ /*-----------------------------------*\
+              HOME-SECTION
+ \*-----------------------------------*/
 
 .home-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  margin: 50px 0;
-  /*margin-bottom: 100px;*/
-  gap: 40px;
+  padding: 0 100px;
+  margin-top: 50px ;
+  margin-bottom: 100px;
 }
 
 .home-section .text h2 {
   font-size: 45px;
 }
 
-.home-section .text{
-    flex: 5
+.home-section .text {
+  flex: 5;
 }
 
-.home-section .photo{
-
-    flex: 2
+.home-section .photo {
+  flex:2;
 }
 
-.home-section .text .links a{
-    display: inline-block;
-    padding:5px 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+img {
+  width: 400px;
+  border-radius: 50%;
+}
+
+.home-section .text .links a {
+  display: inline-block;
+  padding:5px 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+/*-----------------------------------*\
+              ABOUT-SECTION            
+\*-----------------------------------*/
+
+.about-section {
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+
+.about-section h2 {
+  font-size: 30px;
+}
+
+
+
+
+
+/*------------------------------------*\
+            PROJECT-SECTION            
+\*------------------------------------*/
+
+.project-section {
+  padding: 100px;
+  margin-bottom: 100px;
+}
+
+.project-section h2 {
+  font-size: 30px;
+}
+
+.project-container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.project {
+  border: 2px solid black;
+  border-radius: 10px;
+  min-height: 300px;
+  width: 250px;
+  padding: 10px;
+}
+
+.project a {
+  color: rgb(38, 38, 191);
+  border: 2px solid  rgb(38, 38, 191);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.project a:hover {
+  color: black;
+}
+
+
+
+
+
+/*------------------------------------*\
+           CONTACT-SECTION 
+\*------------------------------------*/
+
+.contact-section {
+  display: flex;
+  gap: 50px;
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+
+.contact-section .text h2 {
+  font-size: 30px;
+}
+
+.contact-section .text {
+  flex: 3;
+}
+
+.contact-section form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  font-family: Nunito Sans;
+  border: 2px solid rgb(38, 38, 191);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section form button {
+  font-size: 16px;
+  font-family: Nunito Sans;
+  color: white;
+  background-color: rgb(115, 115, 214);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.contact-section form button:hover {
+  filter: brightness(.9);
 }
 
 
@@ -75,10 +202,6 @@ nav .right a:last-child{
     nav .right a span{
         display: none;
     }
-    nav .right a:last-child{
-        color: black;
-        background-color: transparent;
-    }
+    
 }
 
-}
